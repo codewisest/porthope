@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Background image from pexels */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 100%),url(../images/background.jpg);
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    width: 960px;
+    height: 120px;
+    background-color: #2d2f30;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo img {
+    width: 100px;
+}
+
+header li { 
+    padding: 0 0.7rem;
+}
+
+header li:not(:first-child) {
+    border-left: 2px solid #1bbf63;
+}
+
+header .links {
+display: flex;
+flex-direction: column;
+}
+
+header .social {
+    display: flex;
+    margin-bottom: 20px;
+    align-self: flex-end;
+    padding-right: 0.7rem;
+}
+
+.social svg:hover {
+    fill: #1bbf63;
+}
+
+header a:hover {
+    color: #1bbf63;
+}
+
+header svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    fill: #fff;
+}
+
+/* Featured */
+.featured-home {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url(../images/ph_fair_33.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
+}
+
+.featured p {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    background-color: rgba(27, 191, 99, .7);
+    padding: 1rem;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 0 10px 0 10px;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 2px 2px 8px #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+.featured p > span {
+    display: block;
+    margin-top: 5px;
+}
+
+.featured-about {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 8) 100%),url(../images/ph_fair_6.jpg);
+}
+
+.featured-gallery {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 8) 100%),url(../images/ph_fair_7.jpg);
+}
+
+.featured-getinvolved {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 8) 100%),url(../images/ph_fair_22.jpg);
+}
+
+.featured-about,
+.featured-gallery,
+.featured-getinvolved {
+    width: 960px;
+    height: 150px;
+    position: relative;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-about h1,
+.featured-gallery h1,
+.featured-getinvolved h1 {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Main */
+main {
+    width: 100%; 
+}
+
+/* History */
+.history {
+    display: flex;
+    background-color: #fff;
+    padding: 2rem;
+    color: #2d2f30;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 > span {
+    display: block;
+    color: #1bbf63;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.history-text {
+    width: 55%;
+}
+
+.history-text p {
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.more-history  {
+    color: #1bbf63;
+    margin-top: 1rem;
+    display: flex;
+    border: 2px solid #1bbf63;
+    padding: 0.5rem 1rem;
+    border-radius: 0 10px 0 10px;
+    align-items: center;
+    width: 150px;
+}
+
+.more-history a {
+    color: #1bbf63;
+    display: block;
+}
+
+.more-history:hover {
+    background-color: #1bbf63;
+}
+
+.more-history:hover > a {
+    color: #fff;
+}
+
+.more-history:hover > svg {
+    stroke: #fff;
+}
+
+.history-text svg {
+    height: 20px;
+    width: 20px;
+    
+    margin-left: 10px;
+    stroke: #1bbf63;
+    stroke-width: 5;
+}
+
+.history-image {
+    width: 40%;
+}
+
+.history-image img {
+    width: 350px;
+    border-radius: 40%;
+}
+
+/* Blog */
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-left {
+    background-color: #2d2f30;
+    padding: 2rem;
+    width: 74%;
+}
+
+.blog h1{
+    text-align: center;
+}
+
+.blog h1 > span {
+    display: block;
+    color: #1bbf63;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.blog-entries {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-entry {
+    width: 44%;
+    border: 2px solid #1bbf63;
+    border-radius: 5px;
+    position: relative;
+    margin: 0.5rem 0 2rem;
+}
+
+.blog-entry img {
+    width: 100%;
+}
+
+.blog-entry-text {
+    padding: 0.5rem;
+}
+
+.blog-entry-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem;
+    background-color: rgba(27, 191, 99, .8);
+}
+
+.blog-entry-date p {
+    text-shadow: 1px 1px 2px #000;;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.blog-entry-text h2 + p {
+    margin: 5px 0 10px;
+}
+
+.blog-entry a {
+    color: #1bbf63;
+    display: inline-block;
+    border: 2px solid #1bbf63;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0 10px 0 10px;
+    align-items: center;
+}
+
+.blog-entry a:hover {
+    background-color: #1bbf63;
+    color: #fff;
+}
+
+aside {
+    width: 25%;
+    padding-top: 2rem;
+}
+
+.president-message {
+    padding: 2rem;
+    background-color: #fff;
+    color: #2d2f30;
+}
+
+.president-message p,
+.volunteer-text p {
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin: 0.8rem 0;
+}
+
+.signature {
+    color: #1bbf63;
+    font-weight: bold;
+}
+.signature span {
+    display: block;
+}
+
+.past-presidents {
+    padding: 2rem;
+    text-align: center;
+    background-color: #2d2f30;
+}
+
+.past-presidents table{
+    width: 80%;
+    margin: 2rem auto;
+}
+.past-presidents tr:nth-child(even),
+.past-presidents th {
+ background-color: #1bbf63;
+}
+
+.past-presidents td,
+.past-presidents th {
+    padding: 0.5rem;
+    text-align: center;
+   }
+
+   /* Gallery */
+   .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+
+   .gallery img {
+    width: 300px;
+    margin-bottom: 1rem;
+   }
+   
+
+   /* get involved */
+   .volunteer-form {
+    background-color: #2d2f30;
+    padding: 2rem;
+   }
+   
+   .volunteer-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1bbf63;
+   }
+   form {
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #1bbf63;
+    padding: 2rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+
+.volunteer-text {
+    background-color: #fff;
+    color: #2d2f30;
+    padding: 2rem;
+}
+
+.volunteer-text ul{
+    
+    list-style-type: disc;
+}
+.volunteer-text li{
+    display: block;  
+}
+
+input[type=text] {
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #1bbf63;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    width: 100px;
+}
+ button:hover {
+    color: #1bbf63;
+    background-color: #fff;
+ }
+
+/* footer */
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #2d2f30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+footer span {
+    color: #1bbf63;
+}
